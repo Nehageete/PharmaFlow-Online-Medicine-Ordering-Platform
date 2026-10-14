@@ -1,0 +1,470 @@
+/* 
+  PharmaFlow Custom Palette Design System
+  --------------------------------------
+  White Smoke:  #F5F5F4
+  Ebony:        #676D5F
+  Dusty Olive:  #67796D
+  Deep Teal:    #5A8780
+  Dark Emerald: #026433
+*/
+
+:root {
+  --color-white-smoke: #F5F5F4;
+  --color-ebony: #676D5F;
+  --color-dusty-olive: #67796D;
+  --color-deep-teal: #5A8780;
+  --color-dark-emerald: #026433;
+  --color-dark-emerald-hover: #014c27;
+  --color-dark-emerald-light: rgba(2, 100, 51, 0.08);
+
+  --bs-primary: #026433;
+  --bs-primary-rgb: 2, 100, 51;
+  --bs-secondary: #67796D;
+  --bs-secondary-rgb: 103, 121, 109;
+  --bs-success: #026433;
+  --bs-success-rgb: 2, 100, 51;
+  --bs-dark: #676D5F;
+  --bs-dark-rgb: 103, 109, 95;
+  --bs-body-bg: #F5F5F4;
+}
+
+body {
+  background-color: var(--color-white-smoke);
+  color: #2b302a;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Background utilities */
+.bg-primary {
+  background-color: var(--color-dark-emerald) !important;
+}
+
+.bg-dark {
+  background-color: #1e241c !important;
+}
+
+.bg-secondary {
+  background-color: var(--color-dusty-olive) !important;
+}
+
+/* Navbar */
+.navbar.bg-primary {
+  background: linear-gradient(135deg, #026433 0%, #3f6e62 100%) !important;
+  box-shadow: 0 4px 16px rgba(2, 100, 51, 0.18) !important;
+}
+
+.navbar-brand {
+  font-size: 1.35rem;
+  letter-spacing: 0.3px;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--color-dark-emerald) !important;
+  border-color: var(--color-dark-emerald) !important;
+  color: #ffffff !important;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(2, 100, 51, 0.2);
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: var(--color-dark-emerald-hover) !important;
+  border-color: var(--color-dark-emerald-hover) !important;
+  box-shadow: 0 4px 10px rgba(2, 100, 51, 0.3);
+}
+
+.btn-outline-primary {
+  color: var(--color-dark-emerald) !important;
+  border-color: var(--color-dark-emerald) !important;
+  font-weight: 500;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active {
+  background-color: var(--color-dark-emerald) !important;
+  border-color: var(--color-dark-emerald) !important;
+  color: #ffffff !important;
+}
+
+.btn-secondary {
+  background-color: var(--color-dusty-olive) !important;
+  border-color: var(--color-dusty-olive) !important;
+  color: #ffffff !important;
+}
+
+.btn-outline-secondary {
+  color: var(--color-ebony) !important;
+  border-color: var(--color-ebony) !important;
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--color-ebony) !important;
+  color: #ffffff !important;
+}
+
+/* Text colors */
+.text-primary {
+  color: var(--color-dark-emerald) !important;
+}
+
+.text-secondary {
+  color: var(--color-dusty-olive) !important;
+}
+
+.text-muted {
+  color: #61675a !important;
+}
+
+/* Badges */
+.badge.bg-primary {
+  background-color: var(--color-dark-emerald) !important;
+}
+
+.badge.bg-secondary {
+  background-color: var(--color-dusty-olive) !important;
+}
+
+.badge.bg-info {
+  background-color: var(--color-deep-teal) !important;
+  color: #ffffff !important;
+}
+
+/* Card Styling */
+.card {
+  border-radius: 12px;
+  border: 1px solid rgba(103, 109, 95, 0.15);
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.medicine-card img,
+.category-card img {
+  transition: transform 0.3s ease;
+}
+
+.medicine-card:hover,
+.category-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(2, 100, 51, 0.14) !important;
+}
+
+.medicine-card:hover img,
+.category-card:hover img {
+  transform: scale(1.04);
+}
+
+/* Form Controls */
+.form-control:focus, .form-select:focus {
+  border-color: var(--color-deep-teal);
+  box-shadow: 0 0 0 0.25rem rgba(90, 135, 128, 0.25);
+}
+
+/* Sidebar Navigation */
+.nav-link.bg-primary {
+  background-color: var(--color-dark-emerald) !important;
+  color: #ffffff !important;
+}
+
+/* Tables */
+.table thead th {
+  border-bottom: 2px solid var(--color-dusty-olive);
+  font-weight: 600;
+  color: var(--color-ebony);
+  background-color: rgba(245, 245, 244, 0.7);
+}
+
+/* Footer */
+footer.bg-dark {
+  background-color: #1a2018 !important;
+  border-top: 3px solid var(--color-dark-emerald);
+}
+
+/* ==========================================================
+   Modern Clean White + Emerald Glassmorphic Auth Design
+   ========================================================== */
+.auth-page-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(2, 60, 32, 0.75) 0%, rgba(90, 135, 128, 0.8) 100%);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  padding: 2.5rem 1.5rem;
+  overflow-x: hidden;
+}
+
+.auth-brand-nav {
+  position: absolute;
+  top: 24px;
+  left: 32px;
+  z-index: 10;
+}
+
+.auth-brand-link {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease;
+}
+
+.auth-brand-link:hover {
+  color: #a3f7bf;
+  transform: translateX(-2px);
+}
+
+.auth-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  z-index: 2;
+}
+
+.auth-card-modern {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 25px 60px -10px rgba(2, 60, 32, 0.35), 0 0 0 1px rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(2, 100, 51, 0.12);
+  padding: 3.2rem 2.8rem 2.8rem;
+  color: #1e2922;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (min-width: 992px) {
+  .auth-page-container {
+    padding: 3rem 2rem;
+  }
+  .auth-card-modern {
+    max-width: 490px;
+    padding: 3.5rem 3.2rem 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .auth-brand-nav {
+    position: static;
+    margin-bottom: 1.5rem;
+    align-self: flex-start;
+  }
+  .auth-card-modern {
+    padding: 2.4rem 1.8rem 2rem;
+    border-radius: 22px;
+  }
+}
+
+.auth-avatar-circle {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #026433 0%, #087f43 100%);
+  border: 3px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+  color: #ffffff;
+  font-size: 2.1rem;
+  box-shadow: 0 8px 20px rgba(2, 100, 51, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-avatar-circle:hover {
+  transform: scale(1.06);
+  box-shadow: 0 10px 25px rgba(2, 100, 51, 0.35);
+}
+
+.auth-title {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #026433;
+  margin-bottom: 1.75rem;
+}
+
+.auth-role-tabs {
+  display: flex;
+  background: #edf5f0;
+  border-radius: 30px;
+  padding: 4px;
+  margin-bottom: 1.85rem;
+  border: 1px solid rgba(2, 100, 51, 0.12);
+}
+
+.auth-role-tab {
+  flex: 1;
+  text-align: center;
+  background: transparent;
+  border: none;
+  color: #4a6152;
+  font-size: 0.84rem;
+  font-weight: 600;
+  padding: 8px 10px;
+  border-radius: 24px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.auth-role-tab.active {
+  background: #026433;
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 3px 10px rgba(2, 100, 51, 0.28);
+}
+
+.auth-input-group {
+  position: relative;
+  margin-bottom: 1.85rem;
+}
+
+.auth-input-group .auth-input-icon {
+  position: absolute;
+  left: 4px;
+  bottom: 10px;
+  color: #026433;
+  font-size: 1.15rem;
+  pointer-events: none;
+  transition: color 0.2s ease;
+}
+
+.auth-input-underline {
+  width: 100%;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1.5px solid #cad9cf !important;
+  border-radius: 0 !important;
+  color: #1a241e !important;
+  font-size: 0.98rem;
+  padding: 8px 38px 8px 34px !important;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.auth-input-underline::placeholder {
+  color: #8fa196 !important;
+  letter-spacing: 0.5px;
+  font-size: 0.94rem;
+}
+
+.auth-input-underline:focus {
+  outline: none !important;
+  border-bottom-color: #026433 !important;
+  box-shadow: 0 1px 0 #026433 !important;
+}
+
+.auth-input-group:focus-within .auth-input-icon {
+  color: #014c27;
+}
+
+.auth-password-toggle {
+  position: absolute;
+  right: 4px;
+  bottom: 8px;
+  background: transparent;
+  border: none;
+  color: #67796d;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0 4px;
+  transition: color 0.2s ease;
+}
+
+.auth-password-toggle:hover {
+  color: #026433;
+}
+
+.auth-error-msg {
+  color: #dc3545;
+  font-size: 0.78rem;
+  margin-top: 4px;
+  padding-left: 2px;
+}
+
+.auth-checkbox-label {
+  color: #3e5246;
+  font-size: 0.88rem;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 500;
+}
+
+.auth-checkbox {
+  accent-color: #026433;
+  cursor: pointer;
+}
+
+.auth-forgot-link {
+  color: #026433;
+  font-size: 0.86rem;
+  font-style: italic;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.auth-forgot-link:hover {
+  color: #013f20;
+  text-decoration: underline;
+}
+
+.auth-submit-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #026433 0%, #087f43 100%) !important;
+  border: none !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 13px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(2, 100, 51, 0.3);
+  transition: all 0.25s ease;
+}
+
+.auth-submit-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #014e28 0%, #026433 100%) !important;
+  box-shadow: 0 8px 24px rgba(2, 100, 51, 0.45);
+  transform: translateY(-2px);
+}
+
+.auth-submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.auth-footer-link {
+  color: #556b5f;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 1.75rem;
+  margin-bottom: 0;
+}
+
+.auth-footer-link a {
+  color: #026433;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.auth-footer-link a:hover {
+  color: #013f20;
+  text-decoration: underline;
+}
+
+
